@@ -1,4 +1,4 @@
-title: "Out of the Box Plugins"
+title: "Clean Project Documentation"
 
 repository: outoftheboxplugins/CleanProject-docs
 
@@ -10,7 +10,7 @@ baseurl: "/CleanProject"
 
 aux_links:
   "Open an issue":
-    - "//github.com/outoftheboxplugins/docs/issues"
+    - "//github.com/outoftheboxplugins/CleanProject-docs/issues"
 aux_links_new_tab: true
 
 enable_copy_code_button: true
@@ -33,6 +33,3 @@ callouts:
   warning:
     title: Warning
     color: red
-
-#plugins:
-#  - jekyll-seo-tag
