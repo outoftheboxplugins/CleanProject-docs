@@ -10,6 +10,19 @@ nav_order: 2
 
 This process is very helpful if you have a certain development-only assets, e.g.: `BP_PressEnterShiftWin` which you want to keep in your project/level to simplify development experience but you want them automatically remove from the final package.
 
+# Availability
+
+
+Origin                | Available | Explanation                                                    |
+--------------------- | --------- | -------------------------------------------------------------- |
+Clean Project Menu    | ❌        | Selected assets are required for this operation               |
+Project Context Menu  | ❌        | Selected assets are required for this operation               |
+Asset Context Menu    | ✅        | Blacklist **all the selected** assets                         |
+Folder Context Menu   | ✅        | Blacklist **all** assets **from the selected folders**        |
+Report Dialog         | ✅        | Blacklist **all the selected** assets                         |
+
+
+
 # Marking an Asset as Excluded
 
 To mark one or more assets as `ExcludedAssets` select the objects then right click -> Mark as Excluded.

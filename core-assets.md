@@ -8,6 +8,18 @@ nav_order: 1
 
 `Core Assets` are assets considered essential to your project. They and their references will be protected from the cleanup process. We will automatically determine the assets required by your packaged game (TODO: Insert link) but you can manually mark a folder (TODO: Insert link) or asset (TODO: Insert link) as such.
 
+# Availability
+
+
+Origin                | Available | Explanation                                                    |
+--------------------- | --------- | -------------------------------------------------------------- |
+Clean Project Menu    | ❌        | Selected assets are required for this operation               |
+Project Context Menu  | ❌        | Selected assets are required for this operation               |
+Asset Context Menu    | ✅        | Whitelist **all the selected** assets                         |
+Folder Context Menu   | ✅        | Whitelist **all** assets **from the selected folders**        |
+Report Dialog         | ✅        | Whitelist **all the selected** assets                         |
+
+
 # Automatically picked up
 
 Right now, the algorithm marks the following assets as `Core Assets`:
