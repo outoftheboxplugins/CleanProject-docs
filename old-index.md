@@ -24,72 +24,11 @@ MyMaterial            | Material             | N/A                              
 BP_MyDebugBlueprint   | Blueprint            | MyCube                                |
 MyCube                | Static Mesh          | N/A                                   |
 
-## Dependency Asset
-
-A **Dependency Asset** is an asset we consider a core dependency for our project. This asset is always considered **used**. All the assets which are referenced by it are also considered a **Dependency Asset**. When we check if an asset is unused we check if he's **NOT** referenced by at least 1 **Dependency Asset**.
-
-The **Dependency Assets** can be set inside the [Whitelist Settings](#markdown-header-whitelist-settings).
-
-### Example
-If we consider *MyLevel* a **Dependency Asset**, this means this asset is needed in our final game and we can't delete it, but this also applies it's depedencies. As we can see inside our [Clean Project Menu Dependencies](#markdown-header-menu-dependencies). This means that *BP_MyCoolBlueprint*, *MySphere* & *MyMaterial* can't be deleted either.
-
-![14-DependenciesDialog.gif](https://bitbucket.org/repo/MrEeja9/images/1525995035-14-DependenciesDialog.gif)
-
-## Unused Asset
-
-As hinted previously, an **Unused Asset** is an asset which is not referenced by any of our **Dependency Assets** or their references, therefore can be safely deleted. This does not assure the asset is not by anything else, but since it's not a core dependency, we don't care about them.
-
-### Example
-We will consider *MyLevel* our only **Dependency Asset** and check the following assets: *BP_MyCoolBlueprint* & *BP_MyNotCoolBlueprint*.
-
-As we know from the previous examples, *MyLevel* has the following dependency hierachy:
-
-![image_2021-05-02_213303.png](https://bitbucket.org/repo/MrEeja9/images/2458422660-image_2021-05-02_213303.png)
-
-We can see *BP_MyCoolBlueprint* is a direct depedency of *MyLevel* (our only **Dependency Asset**), therefore we will considered this asset **USED**.
-
-On the other hand, *BP_MyNotCoolBlueprint* is not referenced by *MyLevel* and since there are no more **Dependency Assets** to check against, we will consider this asset **UNUSED**.
-
 ## Cleanup Check
 
 The Cleanup Check refers to the process performed by the clean Project where a set of assets are checked if they are a **Dependency Asset** and create a [Report Dialog](#markdown-header-report-dialog) containing all the assets considered **UNUSED**. This can be triggered by the [Cleanup unused](#markdown-header-cleanup-unused) operation.
 
 ![11-CleanupCheck.gif](https://bitbucket.org/repo/MrEeja9/images/3567333808-11-CleanupCheck.gif)
-
-## Whitelist Asset
-
-A **Whitelist Asset** is an asset we consider important for our project and will never be deleted. This is usually the place where you want to add the assets you are sure you need. 
-
-Note: **Whitelist Asset** can be marked as **Dependency Assets** in the [Whitelist Settings](#markdown-header-whitelist-settings).
-
-### Example
-Right now our only **Dependency Asset** is *MyLevel*. We're going to run the Cleanup Check and get the following result:
-
-![9-CheckBeforeWhitelist.gif](https://bitbucket.org/repo/MrEeja9/images/243124126-9-CheckBeforeWhitelist.gif)
-
-* *BP_MyDebugBlueprint* - it's not referenced by anything or whitelisted
-* *BP_MyNotCoolBlueprint* - it's not referenced by anything or whitelisted
-* *MyCube* - even if it's used by *BP_MyDebugBlueprint* that asset isn't used either.
-
-We will consider *BP_MyDebugBlueprint* is used for debugging and not our packed game, therefore we're going to **whitelist** to mark it as **Dependency Asset** and re-run the previous check.
-Now if run the Cleanup Check in our project right now, we will get the following result:
-
-![10-CheckAfterWhitelist.gif](https://bitbucket.org/repo/MrEeja9/images/2778454217-10-CheckAfterWhitelist.gif)
-
-* *BP_MyNotCoolBlueprint* - it's not referenced by anything or whitelisted
-
-## Blacklist Asset
-
-A **Blacklist Asset** which was added to Unreal's blacklist system. To read more about I recommend [Official Documentation](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/ReducingPackageSize/#packageblacklist). In a nutshell, blacklisting is a way of telling Unreal's cooking system to exclude specific assets from being packed, this way we can achieve a **smaller sized final game without actually deleting our assets**.
-
-The way achieving this is by generating the PakBlacklist files that Unreal will read during packaging process.
-
-### Example
-In our previous example, we explained why we wanted to add the *BP_MyDebugBlueprint* inside the **Whitelist** (we are still using it for debug purposes). However keeping assets inside your project could increase the final size of your packed game. This is especially important for mobile platforms, where size does matter.
-
-To keep a certain asset inside your project and to be sure it won't be added to your final packed game, we need to **Blacklist Asset**.
-
-![12-BlacklistAsset.gif](https://bitbucket.org/repo/MrEeja9/images/1852009023-12-BlacklistAsset.gif)
 
 # Clean Project Dialogs
 
