@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Core Assets
-nav_order: 1
+nav_order: 2
 ---
 
 # What are Core Assets?
