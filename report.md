@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Dashboard
+title: Report
 nav_order: 5
 ---
 
-# TODO Add buttons from dashboard
+# TODO Add buttons from Report
