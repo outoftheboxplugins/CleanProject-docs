@@ -46,21 +46,6 @@ By selecting one or more assets and *right-clicking* or *using the buttons at th
 * **Blacklist** - opens the [Blacklist Dialog](#markdown-header-blacklist-dialog) with the selected entries
 * **Delete** - starts the deleting process of the selected entries' assets
 
-## Blacklist Dialog
-
-When we perform Blacklist operation the following dialog will show up on our screen:
-
-![15-BlacklistDialog.gif](https://bitbucket.org/repo/MrEeja9/images/3992905913-15-BlacklistDialog.gif)!
-
-This contains the following configurable options, which can be configured further inside [Blacklist Settings](#markdown-header-blacklist-settings).
-
-* **Platforms** - Folder where the Blacklist information will be saved
-* **Configurations** - File where the Blacklist information will be saved
-* **Append** - How the information should be added to the existing file 
-	* Checked - Information will override the content of the existing file
-	* Unchecked - Information will appended at the end of the existing file 
-* **Skip next time** - The dialog will be skipped and accepted with the default values
-
 ## Clean Project Menu
 
 The Clean Project Menu is an awesome editor window that let's you see how our Plugin has improved your project so far and how it can improve it further. This window can also be docked to your layout.
@@ -98,38 +83,6 @@ Finally we have the buttons which should sever as a quick shortcut for most [Ope
 To take advantage of the full capabilities we highly recommend tweaking the settings of the Clean Project to the needs of your project. Now we're going to discuss each of them and how they affect the cleanup process.
 
 ![image_2021-06-12_053718.png](https://bitbucket.org/repo/MrEeja9/images/3913924816-image_2021-06-12_053718.png)
-
-## Blacklist Settings
-
-The goal of the Blacklist settings have is to modify the behaviour of either the Blacklist Dialog or the Blacklist Process.
-
-![1-Blacklist-Dialog.gif](https://bitbucket.org/repo/MrEeja9/images/24651327-1-Blacklist-Dialog.gif)
-
-### Save To Temp File
-
-If this option is enabled it will create a temporary file *(ProjectRoot)/Saved/Blacklist.txt* where the output of the blacklist operation will be added. This will also open the newly created/updated file with your default text editor.
-
-If this option is disabled it will create/update the actual final Blacklist files inside *(ProjectRoot)/Build/(Platform)/PakBlacklist-(Configuration).txt*. The blacklist information will override or append to the file content based on other settings or options selected inside the dialog.
-
-### Platform Paths
-
-This is the list of platforms we're going to create Blacklists for. If you are developing for other platforms such as: **tvOS**. The platform needs to be added inside the list. Feel free to delete any platforms you are **NOT** developing for. 
-
-### Blacklist Files
-
-These are the names of the actual blacklist files that will be created on disk. As presented in this [Forum Answer](https://answers.unrealengine.com/questions/479126/apkblacklist-shippingtxt-not-working.html) at the moment of writing this documentation the names of the files need to respect the format: *PakBlacklist-(Configuration).txt* (e.g.: *PakBlacklist-**Shipping**.txt*).
-
-I recommend minimal interaction with this part of the settings, it's not expected that these settings will change anytime soon, so keeping the default is the way to go. Unless you have a configuration you are certain you won't develop/blacklist for.
-
-### Should Append Default
-
-This will change the default value of the **Append?** checkbox inside the blacklist dialog. In case you are rarely deleting previously blacklisted assets or want to cleanup the files, I recommend keep this **check** by default, to always append new lines to your existing files.
-
-### Should Skip Blacklist Dialog
-
-Takes the pain away from dealing with blacklist dialog, it's a quick way of saying: "I trust the default values of the system for everything". Enabling this will automatically run the Blacklist process with the default values ( **All Platforms**, **All Configurations**, **[Append?](#markdown-header-should-append-default)** ) instead of creating the an additional dialog.
-
-**Note**: This has the same effect as ticking *Skip next time* inside the dialog.
 
 ## Whitelist Settings
 
