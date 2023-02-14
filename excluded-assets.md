@@ -12,7 +12,6 @@ This process is very helpful if you have a certain development-only assets, e.g.
 
 # Availability
 
-
 Origin                | Available | Explanation                                                    |
 --------------------- | --------- | -------------------------------------------------------------- |
 Clean Project Menu    | ❌        | Selected assets are required for this operation               |
@@ -20,8 +19,6 @@ Project Context Menu  | ❌        | Selected assets are required for this opera
 Asset Context Menu    | ✅        | Blacklist **all the selected** assets                         |
 Folder Context Menu   | ✅        | Blacklist **all** assets **from the selected folders**        |
 Report Dialog         | ✅        | Blacklist **all the selected** assets                         |
-
-
 
 # Marking an Asset as Excluded
 
