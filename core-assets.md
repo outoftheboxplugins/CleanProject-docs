@@ -38,6 +38,6 @@ You can view all `Core Assets` inside the [Clean Project Dashboard](how-to-run-c
 
 # Removing Core Assets
 
-You can entries from `Core Assets` in the Settings page. Navigate to `Project Settings → Out-of-the-Box Plugins → Clean Project` and remove unwanted assets from `Core Assets` and `Core Folders`.
+You can view entries from `Core Assets` in the Settings page. Navigate to `Project Settings → Out-of-the-Box Plugins → Clean Project` and remove unwanted assets from `Core Assets` and `Core Folders`.
 
 ![image](https://user-images.githubusercontent.com/21221169/221131128-94b59466-ae99-41af-884c-b9b3625688ef.png)
