@@ -6,18 +6,7 @@ nav_order: 2
 
 # What are Core Assets?
 
-`Core Assets` are assets considered essential to your project. They and their references will be protected from the cleanup process. We will automatically determine the assets required by your packaged game (TODO: Insert link) but you can manually mark a folder (TODO: Insert link) or asset (TODO: Insert link) as such.
-
-# Availability
-
-
-Origin                | Available | Explanation                                                    |
---------------------- | --------- | -------------------------------------------------------------- |
-Clean Project Menu    | ❌        | Selected assets are required for this operation               |
-Project Context Menu  | ❌        | Selected assets are required for this operation               |
-Asset Context Menu    | ✅        | Whitelist **all the selected** assets                         |
-Folder Context Menu   | ✅        | Whitelist **all** assets **from the selected folders**        |
-
+`Core Assets` are assets considered essential to your project. They and their references will be protected from the cleanup process. We will automatically determine the assets required by your packaged game but you can manually mark an asset or a folder.
 
 # Automatically picked up
 
@@ -31,14 +20,24 @@ Right now, the algorithm marks the following assets as `Core Assets`:
     - `GlobalDefaultServerGameMode` - GameMode used by the server if none was explicity set on the world
     - `GameInstance` - Manager spawned on both client & server to manage the running game
 
-# Marking an Asset as Core
+# Manually Marking
 
-To mark one or more assets as `CoreAssets` select the objects then right click -> Mark as Core.
+## Marking an Asset as Core
 
-TODO: Insert video of selecting one or more assets and right-clicking
+Select the assets you want to mark and use the [asset context menu](how-to-run-commands#asset-context-menu) to `Mark as Core`.
 
-# Marking a Folder as Core
+## Marking a Folder as Core
 
-To mark all the assets inside one or more folders as `CoreAssets` select the objects then right-click -> Mark as Core.
+Select the folders you want to mark and use the [folder context menu](how-to-run-commands#folder-context-menu) to `Mark as Core`.
 
-TODO: Insert video of selecting one or more folders and right-clicking
+# View Core Assets
+
+You can view all `Core Assets` inside the [Clean Project Dashboard](how-to-run-commands#dashboard-tab).
+
+![image](https://user-images.githubusercontent.com/21221169/221132010-08aebccc-a89c-4cd7-8491-1845028524d8.png)
+
+# Removing Core Assets
+
+You can entries from `Core Assets` in the Settings page. Navigate to `Project Settings → Out-of-the-Box Plugins → Clean Project` and remove unwanted assets from `Core Assets` and `Core Folders`.
+
+![image](https://user-images.githubusercontent.com/21221169/221131128-94b59466-ae99-41af-884c-b9b3625688ef.png)
