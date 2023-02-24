@@ -15,4 +15,3 @@ Clean Project Menu    | ✅        | Checks if **any** asset browser is unused  
 Project Context Menu  | ✅        | Checks if **any** asset browser is unused                     |
 Asset Context Menu    | ✅        | Checks if **any of the selected** assets is unused            |
 Folder Context Menu   | ✅        | Checks if **any** asset **of the selected folders** is unused |
-Report Dialog         | ❌        | There is no point on running a cleanup check from a report    |

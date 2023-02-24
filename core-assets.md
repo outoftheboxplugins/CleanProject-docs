@@ -17,7 +17,6 @@ Clean Project Menu    | ❌        | Selected assets are required for this opera
 Project Context Menu  | ❌        | Selected assets are required for this operation               |
 Asset Context Menu    | ✅        | Whitelist **all the selected** assets                         |
 Folder Context Menu   | ✅        | Whitelist **all** assets **from the selected folders**        |
-Report Dialog         | ✅        | Whitelist **all the selected** assets                         |
 
 
 # Automatically picked up

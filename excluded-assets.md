@@ -18,7 +18,6 @@ Clean Project Menu    | ❌        | Selected assets are required for this opera
 Project Context Menu  | ❌        | Selected assets are required for this operation               |
 Asset Context Menu    | ✅        | Blacklist **all the selected** assets                         |
 Folder Context Menu   | ✅        | Blacklist **all** assets **from the selected folders**        |
-Report Dialog         | ✅        | Blacklist **all the selected** assets                         |
 
 # Marking an Asset as Excluded
 
