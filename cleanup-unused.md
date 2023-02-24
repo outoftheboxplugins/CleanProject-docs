@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Cleanup Operation
+title: Cleanup Process
 nav_order: 5
 ---
 
-# What is the Cleanup operation
+# What is the Cleanup Process
 
-The `Cleanup operation` (also known as `Cleanup unused`) is the process by which the plugin collects the [**unused**](index#what-is-consider-unused) from the input assets and creates a [Cleanup report]()
+The `Cleanup operation` (also known as `Cleanup unused`) is the process by which the plugin collects the [**unused**](index#what-is-consider-unused) from the input assets and creates a [Cleanup report](#what-is-the-cleanup-report).
 
 ## What is fast cleanup
 
@@ -18,4 +18,4 @@ Loads every asset in memory to get up to date references for all assets.
 
 Note/Warning: Currently disable due to engine crashes.
 
-# What it producedes
+# What is the Cleanup report
