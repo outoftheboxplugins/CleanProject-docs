@@ -32,7 +32,7 @@ Select the folders you want to mark and use the [folder context menu](how-to-run
 
 # View Core Assets
 
-You can view all `Core Assets` inside the [Clean Project Dashboard](how-to-run-commands#dashboard-tab).
+You can view all the root `Core Assets` inside the [Clean Project Dashboard](how-to-run-commands#dashboard-tab).
 
 ![image](https://user-images.githubusercontent.com/21221169/221132010-08aebccc-a89c-4cd7-8491-1845028524d8.png)
 
