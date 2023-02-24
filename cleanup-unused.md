@@ -4,14 +4,18 @@ title: Cleanup Unused
 nav_order: 5
 ---
 
-# TODO: List of places where the cleanup can be triggered from
+# What is
 
-# Availability
+Bread and butter of the plugin blah blah
 
+## What is fast cleanup
 
-Origin                | Available | Explanation                                                    |
---------------------- | --------- | -------------------------------------------------------------- |
-Clean Project Menu    | ✅        | Checks if **any** asset browser is unused                     |
-Project Context Menu  | ✅        | Checks if **any** asset browser is unused                     |
-Asset Context Menu    | ✅        | Checks if **any of the selected** assets is unused            |
-Folder Context Menu   | ✅        | Checks if **any** asset **of the selected folders** is unused |
+Relys on cached information to perform a cleanup operations
+
+## What is a complex cleanup
+
+Loads every asset in memory to get up to date references for all assets. 
+
+Note/Warning: Currently disable due to engine crashes.
+
+# What it producedes
