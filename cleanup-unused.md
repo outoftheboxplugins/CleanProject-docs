@@ -8,6 +8,13 @@ nav_order: 5
 
 The `Cleanup operation` (also known as `Cleanup unused`) is the process by which the plugin collects the [**unused**](index#what-is-consider-unused) from the input assets and creates a [Cleanup report](#what-is-the-cleanup-report).
 
+## Input assets
+
+The `Cleanup operation` can be initiated from different places with different input assets:
+- [Toolbar menu](how-to-run-commands#toolbar-menu) → checks for unused assets in your whole project
+- [Folder Context Menu](how-to-run-commands#folder-context-menu) → checks for unused assets in the selected folders recursively
+- [Asset Context Menu](how-to-run-commands#asset-context-menu) → checks for unused assets in the selected assets
+
 ## What is the Fast Cleanup
 
 The `Fast Cleanup` is the fast version of the clenaup operation, it uses the same logic as the [Complex Cleanup](#what-is-a-complex-cleanup) but **relys on cached information to determine references between assets**.
