@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Cleanup Unused
+title: Cleanup Operation
 nav_order: 5
 ---
 
-# What is
+# What is the Cleanup operation
 
-Bread and butter of the plugin blah blah
+The `Cleanup operation` (also known as `Cleanup unused`) is the process by which the plugin collects the [**unused**](index#what-is-consider-unused) from the input assets and creates a [Cleanup report]()
 
 ## What is fast cleanup
 

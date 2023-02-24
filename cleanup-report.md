@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Report
+title: Cleanup Report
 nav_order: 6
 ---
 
