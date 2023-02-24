@@ -6,7 +6,7 @@ nav_order: 7
 
 # What are Redirectors?
 
-To facicilitate a smooth experience, when moving/renaming assets inside Unreal Engine a [redirector](https://docs.unrealengine.com/5.1/en-US/ProductionPipelines/Redirectors/) is created to ensure no references are broken.
+To facicilitate a smooth experience, when moving/renaming assets inside Unreal Engine a [redirector](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/Redirectors/) is created to ensure no references are broken.
 
 This leaves the developers responsible for "fixing" those redirectors by performing the full operation when it's more convient.
 
@@ -20,5 +20,5 @@ To quickly fix all directors in your project, navigate the [Toolbar menu](how-to
 
 ## Standard ways
 
-Unreal provides multiple ways to fix redirectors explained [here](https://docs.unrealengine.com/5.1/en-US/ProductionPipelines/Redirectors/).
+Unreal provides multiple ways to fix redirectors explained [here](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/Redirectors/).
 

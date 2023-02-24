@@ -4,14 +4,20 @@ title: Cleanup empty folders
 nav_order: 8
 ---
 
-# TODO
+# What are Empty Folders?
 
-# Availability
+I know this might sound straight forward but that's not the case in Unreal Engine. It's possible after moving an asset a folder will show up empty inside the editor, but on disk it will still contain files. This is happening due to [Redirectors](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/Redirectors/).
 
+{: .note }
+Running this operation will trigger a [Fixup redirectors](fix-redirectors) operation beforehand to ensure the folders are empty.
 
-Origin                | Available | Explanation                                                    |
---------------------- | --------- | -------------------------------------------------------------- |
-Clean Project Menu    | ✅        | Checks **any** folder is empty                                |
-Project Context Menu  | ❌        | Not used often enough to deserve a spot in the menu           |
-Asset Context Menu    | ❌        | There are no folders to check                                 |
-Folder Context Menu   | ✅        | Checks if **any of the selected** folders is empty            |
+# Deleting Empty Folders
+
+## Project Wide
+
+To quickly fix all directors in your project, navigate the [Toolbar menu](how-to-run-commands#toolbar-menu) and start the `Cleanup redirectors` operation.
+
+## Specific folders
+
+Unreal provides multiple ways to fix redirectors explained [here](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/Redirectors/).
+
