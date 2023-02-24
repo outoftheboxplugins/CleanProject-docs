@@ -11,13 +11,14 @@ I know this might sound straight forward but that's not the case in Unreal Engin
 {: .note }
 Running this operation will trigger a [Fixup redirectors](fix-redirectors) operation beforehand to ensure the folders are empty.
 
+![image](https://user-images.githubusercontent.com/21221169/221152423-66b2b785-42e9-40e3-8731-f01f2a5b1060.png)
+
 # Deleting Empty Folders
 
 ## Project Wide
 
-To quickly fix all directors in your project, navigate the [Toolbar menu](how-to-run-commands#toolbar-menu) and start the `Cleanup redirectors` operation.
+To quickly fix all empty folders in your project, navigate the [Toolbar menu](how-to-run-commands#toolbar-menu) and start the `Cleanup empty folders` operation.
 
 ## Specific folders
 
-Unreal provides multiple ways to fix redirectors explained [here](https://docs.unrealengine.com/4.26/en-US/ProductionPipelines/Redirectors/).
-
+Select the folders you want to clean up and use the [folder context menu](how-to-run-commands#folder-context-menu) to `Cleanup empty folders`.
