@@ -32,8 +32,16 @@ In the [Unused Assets list](dashboard#unused-assets-list) we can find `NotMyBlue
 
 # Report Result
 
-![image](https://user-images.githubusercontent.com/21221169/221211746-57ba6773-ef4f-4e52-929d-c7184992a4bb.png)
+As expected in the [Cleanup Report](cleanup-unused#what-is-the-cleanup-report) we get all the assets listed as unused in the dashboard.
+
+![image](https://user-images.githubusercontent.com/21221169/221212231-5f43a05a-704a-4fe1-a81d-17bacc6d93da.png)
 
 # Delete Result
+
+After initiating the deletion of the unused assets, we get a warning about assets still beeing referenced. 
+
+This normal and can have various reasons. The most common is the blueprint is currently open or was recently edited. 
+
+The assets can be safely deleted with no errors during the process.
 
 ![image](https://user-images.githubusercontent.com/21221169/221211846-edf327a1-e51c-4bfd-8767-8724b24e4d6e.png)
