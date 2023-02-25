@@ -9,18 +9,16 @@ nav_order: 0
 {: .important }
 Before you run this tool in your project, please make sure you have a backup of your project.
 
-The basic idea behind our algorithm is to build a list of `Core Assets` (the essential assets to your project) and determine all their refereneces recursively. The result are the assets we consider **in-use**.
+The basic idea behind our algorithm is to build a list of [Core Assets](core-assets#what-are-core-assets) (the essential assets to your project) and including all their refereneces recursively. The result are the assets we consider **in-use**.
 
 Finally we loop thorugh all the assets in the project. If they are not part of the **in-use** list, we consider it **unused**.
 
 # Preparing your project
 
-We will automatically determine what assets are important to yor project using (TODO:Insert link). If there are other assets we should be aware of you can manually mark them as (TODO: Insert link).
+We will automatically determine what assets are important to yor project using ([see more](core-assets#automatically-picked-up)). If there are other assets we should be aware of you can manually mark them ([see more](core-assets#manually-marking)).
 
-# Glance over the current state
+# Starting out
 
-If you want to get an overview of what the state of your project is, use the (TODO: Insert link). This will display what `Core Assets` the algorithm is using and what assets are currently considered **unused**.
+If you want to quickly get an overview of the state of your project before, open up the [Dashboard](how-to-run-commands#dashboard-tab).
 
-# Project wide cleanup
-
-Once you are happy with the evaluation you can run the Cleanup operation project wide (TODO: Insert link) or targeting a specific folder (TODO: Insert link) or asset selection (TODO: insert link).
+If you want to start cleaning up directly, use the [Toolbar Menu](how-to-run-commands#toolbar-menu) to initiate a project wide [Cleanup Operation](cleanup-unused).
